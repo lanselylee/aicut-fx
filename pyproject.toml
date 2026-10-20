@@ -15,7 +15,7 @@ requires = ["uv_build>=0.12.3,<0.13.0"]
 build-backend = "uv_build"
 
 [tool.uv.sources]
-aicut-analyzer = { path = "../aicut-analyzer", editable = true }
+aicut-analyzer = { git = "https://github.com/lanselylee/aicut-analyzer", branch = "main" }
 
 [dependency-groups]
 dev = [

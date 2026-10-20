@@ -5,22 +5,11 @@ requires-python = ">=3.12"
 [[package]]
 name = "aicut-analyzer"
 version = "0.1.0"
-source = { editable = "../aicut-analyzer" }
+source = { git = "https://github.com/lanselylee/aicut-analyzer?branch=main#aaafcd45ffd2d1734ecabd3c0e8605bdfc2cb19e" }
 dependencies = [
     { name = "numpy" },
     { name = "opencv-python-headless" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "matplotlib", marker = "extra == 'plot'", specifier = ">=3.11.2" },
-    { name = "numpy", specifier = ">=2.5.4" },
-    { name = "opencv-python-headless", specifier = ">=5.0.0.93" },
-]
-provides-extras = ["plot"]
-
-[package.metadata.requires-dev]
-dev = [{ name = "pytest", specifier = ">=9.1.1" }]
 
 [[package]]
 name = "aicut-fx"
@@ -36,7 +25,7 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "aicut-analyzer", editable = "../aicut-analyzer" }]
+requires-dist = [{ name = "aicut-analyzer", git = "https://github.com/lanselylee/aicut-analyzer?branch=main" }]
 
 [package.metadata.requires-dev]
 dev = [{ name = "pytest", specifier = ">=9.1.1" }]

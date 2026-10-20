@@ -1,5 +1,7 @@
 # aicut-fx
 
+[![test](https://github.com/lanselylee/aicut-fx/actions/workflows/test.yml/badge.svg)](https://github.com/lanselylee/aicut-fx/actions/workflows/test.yml)
+
 Footage-aware effects for vlogs. A label that stays on the object it names, a title set where the picture is calm, an
 accent color taken from the footage itself: effects that know what is in the frame, written as an editable
 [OpenFilm](https://github.com/openfilm/openfilm) project.

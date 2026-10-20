@@ -1,0 +1,27 @@
+[project]
+name = "aicut-fx"
+version = "0.1.0"
+description = "Footage-aware effects for vlogs: labels that follow objects, titles placed in empty space, colors from the picture. Writes OpenFilm projects."
+requires-python = ">=3.12"
+dependencies = [
+    "aicut-analyzer",
+]
+
+[project.scripts]
+aicut-fx = "aicut_fx.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+aicut-analyzer = { path = "../aicut-analyzer", editable = true }
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]

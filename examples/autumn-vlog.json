@@ -1,0 +1,7 @@
+{
+  "effects": [
+    {"type": "title", "clip": "street-tree", "text": "秋天的一个下午", "kicker": "SEATTLE · OCTOBER", "duration": 4},
+    {"type": "tracked_label", "clip": "elevator", "text": "Matcha 🍵", "target": {"at": 0.3, "box": [0.22, 0.37, 0.56, 0.27]}},
+    {"type": "tracked_label", "clip": "space-needle", "text": "Space Needle", "target": {"at": 0.0, "box": [0.53, 0.41, 0.11, 0.06]}}
+  ]
+}
